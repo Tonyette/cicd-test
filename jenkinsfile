@@ -14,9 +14,8 @@ pipeline {
                 echo 'testing'
                 nodejs('node')
                 sh './script/test.js'
-            }
-        }
-                
+               }
+           }       
         }
     }
 }
