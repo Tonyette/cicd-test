@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    stages {
+        stage('building node') {
+            step {
+                echo 'building'
+                nodejs('node'){
+                    sh 'npm install'
+                    sh 'node index.js'
+                }
+            }
+        stage('testing node') {
+            step{
+                echo 'testing'
+                nodejs('node')
+                sh './script/test.js'
+            }
+        }
+                
+        }
+    }
+}
