@@ -7,6 +7,7 @@ pipeline {
                 nodejs('node'){
                     sh 'npm install'
                     sh 'node index.js'
+                    }
                 }
             }
         stage('testing node') {
