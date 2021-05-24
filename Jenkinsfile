@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('building node') {
-            step {
+            steps {
                 echo 'building'
                 nodejs('node'){
                     sh 'npm install'
@@ -10,12 +10,11 @@ pipeline {
                 }
             }
         stage('testing node') {
-            step{
+            steps {
                 echo 'testing'
                 nodejs('node')
                 sh './script/test.js'
-               }
-           }       
+            }       
         }
     }
 }
