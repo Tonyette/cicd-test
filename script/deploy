@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh tonia@34.71.156.56 <<EOF
+ssh tonia@162.222.180.4 <<EOF
 cd ~/cicd-test
 git pull
 npm install -production
