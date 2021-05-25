@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ssh tonia@34.71.156.56 <<EOF
+cd ~/cicd-test
+git pull
+npm install -production
+sudo apt install pm2@latest
+pm2 restart all
+exit
+EOF
