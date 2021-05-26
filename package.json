@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "mocha": "^5.2.0",
-    "supertest": "^3.4.2"
+    "supertest": "^3.4.2",
+    "pm2": "4.5.6"
   }
 }
