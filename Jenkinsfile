@@ -23,6 +23,7 @@ pipeline {
                 sh 'ssh tonia@162.222.180.4'
                 sh 'cd ~/cicd-test'
                 sh 'npm install --production'
+                sh 'npm install pm2'
                 sh 'pm2 restart all'
                 sh 'exit'
             }
