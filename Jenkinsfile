@@ -24,7 +24,6 @@ pipeline {
                 sh 'cd ~/cicd-test'
                 sh 'git pull https://github.com/Tonyette/cicd-test.git'
                 sh 'npm install --production'
-                sh 'npm install -g pm2'
                 sh 'pm2 start index.js'
                 sh 'exit'
             }
